@@ -6,7 +6,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
   object-fit: cover;
@@ -14,4 +14,15 @@ img {
 
 p {
   margin: 0;
+}
+
+h2 {
+  color: $secondary;
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+body {
+  overflow-y: auto;
 }

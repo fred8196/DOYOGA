@@ -67,14 +67,15 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+$primary: #f5f0e7 !default; //$blue !default;
+$secondary: #907a7b !default; //$gray-600 !default;
+$secondary-light: #c0a4a5 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: #707070 !default; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -264,6 +265,14 @@ $spacers: (
   6: $spacer * 1.5,
   7: $spacer * 1.75,
   8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  12: $spacer * 3,
+  14: $spacer * 3.5,
+  16: $spacer * 4,
+  20: $spacer * 5,
+  22: $spacer * 5.5,
+  26: $spacer * 6.5,
 ) !default;
 
 $negative-spacers: if(
@@ -443,6 +452,7 @@ $font-size-lg: $font-size-base * 1.25 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
@@ -468,6 +478,7 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
+  7: $font-size-base * 0.875,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -475,7 +486,7 @@ $font-sizes: (
 $headings-margin-bottom: 0; //$spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
-$headings-font-weight: 500 !default;
+$headings-font-weight: 400 !default;
 $headings-line-height: 1.5 !default;
 $headings-color: null !default;
 // scss-docs-end headings-variables

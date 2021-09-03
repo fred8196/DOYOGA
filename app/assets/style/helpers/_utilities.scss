@@ -151,12 +151,16 @@ $utilities: map-merge(
     // scss-docs-start utils-sizing
     "width":
       (
+        responsive: true,
         property: width,
         class: w,
         values: (
           1\.5: 1.5rem,
-          6: 6rem,
+          3: 3rem,
+          4\.25: 4.25rem,
+          5\.875: 5.875rem,
           25: 25%,
+          28: 28rem,
           50: 50%,
           75: 75%,
           100: 100%,
@@ -190,6 +194,20 @@ $utilities: map-merge(
       class: h,
       values: (
         1\.5: 1.5rem,
+        3: 3rem,
+        4\.25: 4.25rem,
+        5\.875: 5.875rem,
+        7\.3125: 7.3125rem,
+        9\.375: 9.375rem,
+        12\.875: 12.875rem,
+        13\.125: 13.125rem,
+        15\.25: 15.25rem,
+        16\.625: 16.625rem,
+        17\.75: 17.75rem,
+        26\.25: 26.25rem,
+        27\.75: 27.75rem,
+        28: 28rem,
+        39\.25: 39.25rem,
         2: 2rem,
         25: 25%,
         50: 50%,
@@ -411,6 +429,7 @@ $utilities: map-merge(
         map-merge(
           $spacers,
           (
+            neg: -6rem,
             auto: auto,
           )
         ),
@@ -533,6 +552,7 @@ $utilities: map-merge(
         light: $font-weight-light,
         lighter: $font-weight-lighter,
         normal: $font-weight-normal,
+        medium: $font-weight-medium,
         bold: $font-weight-bold,
         bolder: $font-weight-bolder,
       ),
@@ -641,12 +661,14 @@ $utilities: map-merge(
     // scss-docs-start utils-border-radius
     "rounded":
       (
+        responsive: true,
         property: border-radius,
         class: rounded,
         values: (
           null: $border-radius,
           0: 0,
-          1: $border-radius-sm,
+          1: 1rem,
+          //$border-radius-sm,
           2: $border-radius,
           3: $border-radius-lg,
           circle: 50%,
@@ -654,30 +676,41 @@ $utilities: map-merge(
         ),
       ),
     "rounded-top": (
+      responsive: true,
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
       values: (
+        0: 0,
+        1: 1rem,
         null: $border-radius,
       ),
     ),
     "rounded-end": (
+      responsive: true,
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
       values: (
+        0: 0,
+        1: 1rem,
         null: $border-radius,
       ),
     ),
     "rounded-bottom": (
+      responsive: true,
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
       values: (
+        0: 0,
+        1: 1rem,
         null: $border-radius,
       ),
     ),
     "rounded-start": (
+      responsive: true,
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
       values: (
+        1: 1rem,
         null: $border-radius,
       ),
     ),
