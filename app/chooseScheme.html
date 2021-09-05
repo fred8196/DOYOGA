@@ -2,7 +2,7 @@
 title: 立即預約-選擇方案
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: chooseScheme
 ---
 
 <section>
@@ -57,8 +57,8 @@ current: index
       </div>
     </div>
     <ul class="row list-unstyled m-0 chooseScheme">
-      <li class="col-lg-4 mb-4 mb-md-6 mb-lg-0">
-        <div class="card rounded-1 border-secondary-light">
+      <li class="scheme-card col-lg-4 mb-4 mb-md-6 mb-lg-4">
+        <div class="firstScheme card rounded-1 border-secondary-light mb-lg-0">
           <div class="row">
             <div class="col-md-6 col-lg-12">
               <img
@@ -100,7 +100,7 @@ current: index
           </div>
         </div>
       </li>
-      <li class="col-lg-4 mb-4 mb-md-6 mb-lg-0">
+      <li class="secondScheme d-inline-block col-lg-4 mb-4 mb-md-6 mb-lg-0">
         <div class="card rounded-1 border-secondary-light">
           <div class="row">
             <div class="col-md-6 col-lg-12">
@@ -143,7 +143,7 @@ current: index
           </div>
         </div>
       </li>
-      <li class="col-lg-4 mb-4 mb-md-6 mb-lg-0">
+      <li class="thirdScheme d-inline-block col-lg-4 mb-4 mb-md-6 mb-lg-0">
         <div class="card rounded-1 border-secondary-light">
           <div class="row">
             <div class="col-md-6 col-lg-12">
@@ -190,13 +190,13 @@ current: index
   </div>
 </section>
 
-<section class="d-block schemeLevel bg-secondary mb-10">
+<section class="d-none schemeLevel bg-secondary mb-10">
   <div class="container py-10">
     <h3 class="fs-3 text-center text-white mb-8">選擇課程階級</h3>
     <div
       class="
         swiper
-        mySwiper
+        swiperScheme
         d-flex
         justify-content-center justify-content-md-start
       "
@@ -355,8 +355,8 @@ current: index
       </p>
     </div>
     <h2 class="text-center">預約須知</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-5">
+    <div class="row d-flex flex-column align-items-center">
+      <div class="col-md-8 col-lg-6">
         <ol>
           <li class="font-noto text-secondary">
             <p>如果有特殊體質、特殊狀況，請主動告知。</p>
@@ -381,6 +381,13 @@ current: index
           </li>
         </ol>
       </div>
+        <div class="col-md-4 text-center">
+          <a
+            href="./fillForm.html"
+            class="d-none nextStep text-white btn btn-secondary-light mt-8 px-26 py-2"
+            >繼續預約</a
+                  >
+        </div>
     </div>
   </div>
 </section>

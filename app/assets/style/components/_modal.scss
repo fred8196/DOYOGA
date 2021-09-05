@@ -1,0 +1,15 @@
+@include media-breakpoint-up(sm) {
+  .modal-dialog-width {
+    max-width: 500px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .modal-dialog-width {
+    max-width: 800px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .modal-dialog-width {
+    max-width: 1140px;
+  }
+}

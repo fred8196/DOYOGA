@@ -1,0 +1,15 @@
+.datepicker-picker {
+  border: solid 2px $secondary-light;
+}
+.datepicker {
+  color: $secondary;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background: $secondary;
+}
+.datepicker-cell:not(.disabled):hover {
+  background: $secondary;
+  color: white;
+}

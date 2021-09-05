@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/silom");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/silom');
 
 a {
   display: block;
@@ -23,6 +23,12 @@ h2 {
   font-weight: 400;
 }
 
-body {
-  overflow-y: auto;
+textarea {
+  resize: none;
+}
+
+th,
+td {
+  font-weight: normal;
+  border-color: $secondary-light !important;
 }
