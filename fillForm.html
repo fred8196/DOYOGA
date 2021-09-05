@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>立即預約-完成預約</title>
+    <title>立即預約-填寫資料</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -87,146 +87,160 @@
       </div>
     </nav>
 
-    
-<section>
-  <div class="container pt-12 pt-md-16 pb-22 pb-md-20 pb-lg-26">
+    <section>
+  <div class="container pt-12 pt-md-16">
     <div class="row align-items-center flex-column">
       <div class="col-md-6 text-center">
         <h1 class="fs-3 text-secondary text-center mb-6 mb-md-4">立即預約</h1>
-        <ul
-          class="
-            list-unstyled
-            d-flex
-            justify-content-between justify-content-md-around
-            mb-9
-          "
-        >
+        <ul class="
+              list-unstyled
+              d-flex
+              justify-content-between
+              mb-9
+            ">
           <li class="text-center">
-            <div
-              class="
-                bg-primary
-                text-secondary
-                rounded-1
-                px-5
-                py-4
-                px-md-3 px-lg-12
-              "
-            >
+            <div class="
+                  bg-primary
+                  text-secondary
+                  rounded-1
+                  px-5
+                  py-4
+                  px-md-3 px-lg-12
+                ">
               選擇方案
             </div>
           </li>
           <li class="text-center">
-            <div
-              class="
-                bg-primary
-                text-secondary
-                rounded-1
-                px-5
-                py-4
-                px-md-3 px-lg-12
-              "
-            >
+            <div class="
+                  bg-secondary text-white
+                  rounded-1
+                  px-5
+                  py-4
+                  px-md-3 px-lg-12
+                ">
               填寫資料
             </div>
           </li>
           <li class="text-center">
-            <div
-              class="
-                bg-secondary
-                text-white
-                rounded-1
-                px-5
-                py-4
-                px-md-3 px-lg-12
-              "
-            >
+            <div class="
+            bg-primary
+            text-secondary
+                  rounded-1
+                  px-5
+                  py-4
+                  px-md-3 px-lg-12
+                ">
               完成預約
             </div>
           </li>
         </ul>
-        <span class="material-icons-outlined md-40 text-secondary mb-5">
-          check_circle_outline
-        </span>
-        <p class="text-secondary fs-5 mb-8">已完成預約，以下是您的預約資訊:</p>
       </div>
-      <div class="col-md-8 col-lg-6 mb-6">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button bg-secondary text-white"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                預約資訊
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show font-noto"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div
-                class="
-                  accordion-body
-                  border border-secondary-light
-                  rounded-bottom
-                "
-              >
-                <ul class="list-unstyled text-start text-secondary">
-                  <li class="mb-4">
-                    <p class="fw-medium">
-                      您預約的是<span class="text-secondary-light fs-5 ms-2"
-                        >首次體驗課程-基礎</span
-                      >
-                    </p>
-                  </li>
-                  <li class="mb-2">
-                    <p>上課預約報到日：2021/07/21</p>
-                  </li>
-                  <li class="mb-2">
-                    <p>預約人：Joanne Chen</p>
-                  </li>
-                  <li class="mb-2">
-                    <p>年齡：18 歲</p>
-                  </li>
-                  <li class="mb-2">
-                    <p>性別：女</p>
-                  </li>
-                  <li class="mb-2">
-                    <p>電子信箱：example123@gmail.com</p>
-                  </li>
-                  <li>
-                    <p>手機號碼：0912-345-678</p>
-                  </li>
-                </ul>
-              </div>
+    </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+      <h2 class="fs-6 text-dark text-center mb-6 mb-md-8">您選擇的是<span
+          class="fs-5 text-secondary-light ms-2">首次體驗課程-基礎</span></h2>
+      <form class="font-noto text-dark">
+        <div class="mb-8">
+          <p class="mb-4">1. 是否接觸過瑜珈?</p>
+          <div class="mb-3">
+            <input type="radio" id="yes" name="used" value="yes" checked>
+            <label for="yes" class="form-label me-8">是</label>
+            <input type="radio" id="no" name="used" value="no">
+            <label for="no" class="form-label">否</label>
+          </div>
+        </div>
+        <div class="mb-8">
+          <p class="mb-4">2. 想改善的生活問題??</p>
+          <div class="mb-3">
+            <div>
+              <input type="checkbox" value="muscle" id="muscle" name="
+              improve">
+              <label for="muscle" class="form-label me-4">肌耐力不足</label>
+              <input type="checkbox" value="softness" id="softness" name="
+              improve">
+              <label for="softness" class="form-label me-4">柔軟度不佳</label>
+              <input type="checkbox" value="stress" id="stress" name="
+              improve">
+              <label for="stress" class="form-label">壓力大</label>
+            </div>
+            <div>
+              <input type="checkbox" value="posture" id="posture" name="
+              improve">
+              <label for="posture" class="form-label me-8">姿勢不正</label>
+              <input type="checkbox" value="sleep" id="sleep" name="
+              improve">
+              <label for="sleep" class="form-label me-4">睡眠品質差</label>
+              <input type="checkbox" value="attention" id="attention" name="
+              improve">
+              <label for="attention" class="form-label">注意力不足</label>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <h2 class="text-center fs-5 mb-2">上課注意事項</h2>
-        <p class="font-noto text-secondary mb-8">
-          第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水
-          .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！
-        </p>
-        <a
-          href="./index.html"
-          class="fs-5 btn btn-secondary-light text-white w-100"
-          >返回首頁</a
-        >
-      </div>
+        <div class="mb-8">
+          <p class="mb-4">3. 每週累積運動量約為多少?</p>
+          <div class="mb-3">
+            <div>
+              <input type="radio" id="150" name="exercise" value="150" checked>
+              <label for="150" class="form-label me-8">150 分鐘以上</label>
+              <input type="radio" id="75" name="exercise" value="75">
+              <label for="75" class="form-label">75~150 分鐘</label>
+            </div>
+            <div>
+              <input type="radio" id="30" name="exercise" value="30" checked>
+              <label for="30" class="form-label me-11.5">30~75 分鐘</label>
+              <input type="radio" id="29" name="exercise" value="29">
+              <label for="29" class="form-label">30 分鐘以下</label>
+            </div>
+          </div>
+          <div class="mb-8">
+            <p class="mb-1">4. 上課預約報到日</p>
+            <p class="fs-7 mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+            <div class="mb-3">
+              <input class="border border-secondary-light rounded-sm form-control w-auto" type="text"
+                placeholder="MM/DD/YYYY" name="datepicker">
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+            <div class="d-flex">
+              <div class="me-2">
+                <label for="name" class="form-label mb-2">姓名</label>
+                <input type="text" placeholder="請輸入您的姓名" class="form-control border border-secondary-light rounded-sm"
+                  id="name">
+              </div>
+              <div>
+                <label for="age" class="form-label mb-2">年齡</label>
+                <input type="number" placeholder="請輸入您的年齡" class="form-control border border-secondary-light rounded-sm"
+                  id="age">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="sex" class="mb-2">性別</label>
+            <div>
+              <select placeholder="請輸入您的年齡" name="sex" id="sex" class="border border-secondary-light rounded-sm w-auto form-select">
+                <option value="male">男</option>
+                <option value="female" selected>女</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">電子信箱</label>
+            <input type="email" placeholder="email@example.com" class="form-control border border-secondary-light rounded-sm" id="email" name="email">
+          </div>
+          <div class="mb-8">
+            <label for="phone" class="form-label">手機號碼</label>
+            <input type="phone" placeholder="0912-345-678" class="form-control border border-secondary-light rounded-sm" id="phone" name="phone">
+          </div>
+          <a href="./finishReservation.html" class="btn btn-secondary-light w-100 text-white">送出</a>
+      </form>
     </div>
   </div>
 </section>
-
-
-
 
     <footer class="footer bg-secondary text-white">
       <div class="py-6 py-md-8 border-bottom">
