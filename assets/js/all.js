@@ -81,7 +81,7 @@ if (chooseScheme) {
           schemeLevel.className = "d-block schemeLevel bg-secondary mb-10";
           yourChoice.className = "d-block yourChoice text-center mb-10";
           addArrow.className = "scheme-card col-lg-4 mb-4 mb-md-6 mb-lg-4 arrow";
-          nextStep.className = "d-block nextStep text-white btn btn-secondary-light px-26 py-2 mt-8";
+          nextStep.className = "d-block nextStep text-white btn btn-secondary-light py-2 mt-8";
           secondScheme.className = "secondScheme d-none col-lg-4 mb-4 mb-md-6 mb-lg-0";
           thirdScheme.className = "thirdScheme d-none col-lg-4 mb-4 mb-md-6 mb-lg-0";
           firstScheme.className = "firstScheme card rounded-1 border-secondary-light mb-md-12 mb-lg-0";
@@ -90,14 +90,14 @@ if (chooseScheme) {
           schemeLevel.className = "d-block schemeLevel bg-secondary mb-10";
           yourChoice.className = "d-block yourChoice text-center mb-10";
           addArrow.className = "scheme-card col-lg-4 mb-4 mb-md-6 mb-lg-4 arrow";
-          nextStep.className = "d-block nextStep text-white btn btn-secondary-light px-26 py-2 mt-8";
+          nextStep.className = "d-block nextStep text-white btn btn-secondary-light py-2 mt-8";
           choice = true;
         }
       } else {
         schemeLevel.className = "d-none schemeLevel bg-secondary mb-10";
         yourChoice.className = "d-none yourChoice text-center mb-10";
         addArrow.className = "scheme-card col-lg-4 mb-4 mb-md-6 mb-lg-4";
-        nextStep.className = "d-none nextStep text-white btn btn-secondary-light px-26 py-2 mt-8";
+        nextStep.className = "d-none nextStep text-white btn btn-secondary-light py-2 mt-8";
         secondScheme.className = "secondScheme d-inline-block col-lg-4 mb-4 mb-md-6 mb-lg-0";
         thirdScheme.className = "thirdScheme d-inline-block col-lg-4 mb-4 mb-md-6 mb-lg-0";
         firstScheme.className = "firstScheme card rounded-1 border-secondary-light mb-lg-0";
